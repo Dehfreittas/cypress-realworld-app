@@ -12,7 +12,7 @@ O usuário `Heath93`está cadastrado no sistema.
 **Dados de Teste:**
 
 - Usuário: Heath93
-- Senha: `secret`
+- Senha: `s3cret`
 
 **Passos:**
 
@@ -26,9 +26,6 @@ O usuário `Heath93`está cadastrado no sistema.
 O usuário é autenticado com sucesso e a página inicial da conta é apresentada, exibindo o usuário autenticado.
 
 ## CT-002 - Login com credenciais inválidas
-
-- Usuário: invalidUserName
-- Senha: invalidPa$$word
 
 **Objetivo:**
 
@@ -53,7 +50,7 @@ O usuário está na tela de login do Real World App.
 
 O sistema deve impedir o login e exibir a mensagem de erro `Username or password is invalid`.
 
-## CT-003 - Registro de novo usyário com sucesso
+## CT-003 - Registro de novo usuário com sucesso
 
 **Objetivo:**
 
@@ -67,13 +64,14 @@ O usuário ainda não está cadastrado no sistema.
 
 - Nome: `Paul`
 - Sobrenome: `Mark`
-- Usuário: paulM
-- Senha: MarkP
+- Usuário: `paulM`
+- Senha: `MarkP`
+
 
 **Passos:**
 
 1. Acessar o Real World App.
-2. clicar 2x na mensagem Don´t have an account? Sign Up.
+2. Clicar 2x na mensagem Don't have an account? Sign Up.
 3. Digitar o primeiro nome.
 4. Digitar o sobrenome.
 5. Digitar o username.
@@ -103,7 +101,7 @@ O usuário está na tela de cadastro do Real World App.
 - Nome: `Paul`
 - Sobrenome: `Mark`
 - Usuário: *(em branco)*
-- Senha? `MarkP`
+- Senha: `MarkP`
 
 **Passos:**
 
@@ -114,16 +112,18 @@ O usuário está na tela de cadastro do Real World App.
 5. Não preencher o campo `Username`.
 6. Digitar a senha.
 7. Confirmar a senha.
-8. Clicar no botão `Sign Up`.
+
 
 **Resultado esperado:**
 
-O sistema deve impedir o cadastro enquanto o campo obrigatório `Username` estiver vazio, mantendo o botão `Sign Up`desabilitado.
+O sistema deve impedir o cadastro enquanto o campo obrigatório `Username` estiver vazio, mantendo o botão `Sign Up` desabilitado.
+
 
 **Resultado obtido:**
 
-O sistema manteve o botão `Sign Up`desabilitado quando o campo `Username`permaneceu vazio.
+O sistema manteve o botão `Sign Up` desabilitado quando o campo `Username` permaneceu vazio.
+
 
 **Automação:**
 
-O comportamento foi validado automaticamente pelo Cypress por meio da verificação de que o botão `Sign Up`está desabilitado.
+O comportamento foi validado automaticamente pelo Cypress por meio da verificação de que o botão `Sign Up` está desabilitado.

@@ -1,6 +1,6 @@
 describe("Exercicio 1 - Login e Cadastro", () => {
     it("CT-001 - Login com sucesso", () => {
-        cy.visit("/");
+        cy.visit('/');
         cy.get('[name="username"]').type('Heath93')
         cy.get('[name="password"]').type('s3cret')
         cy.getBySel('signin-submit').click()
@@ -30,7 +30,7 @@ describe("Exercicio 1 - Login e Cadastro", () => {
       cy.getBySel('sidenav-user-full-name').should('be.visible')
 
 });
-    it.only('CT-004 - Registro com dados incompletos', () => {
+    it('CT-004 - Registro com dados incompletos', () => {
       cy.visit('/');
       cy.contains("Don't have an account? Sign Up").dblclick()
       cy.get('[name="firstName"]').type('Paul')
